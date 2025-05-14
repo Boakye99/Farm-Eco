@@ -1,0 +1,1 @@
+const AddProduct = () => <div>Add New Product</div>; export default AddProduct;
