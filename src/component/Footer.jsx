@@ -28,8 +28,8 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="font-semibold mb-3 text-lg">Contact Us</h3>
-          <p className="text-white/80">Email: support@farmeco.com</p>
-          <p className="text-white/80 mt-2">Phone: +233 24 000 0000</p>
+          <p className="text-white/80">Email: boakyeyiadomeri27@gmail.com</p>
+          <p className="text-white/80 mt-2">Phone: +233 24 787 48 07</p>
         </div>
 
         {/* Social Media */}
