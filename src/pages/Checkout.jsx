@@ -170,7 +170,7 @@ export default function CheckoutPage() {
           </div>
           
           <div className="text-center">
-            <p className="text-gray-800 font-bold text-xl mb-6">Total: ${totalPrice.toFixed(2)}</p>
+            <p className="text-gray-800 font-bold text-xl mb-6">Total: ${totalPrice.toFixed(3)}</p>
             <button 
               className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 w-full"
               onClick={() => window.location.href = '/'}

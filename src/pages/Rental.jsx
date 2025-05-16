@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Search, Sliders, ChevronDown, ChevronRight, Star, Grid3x3, List, ChevronLeft, ChevronRight as ChevronRightIcon, ArrowLeft } from 'lucide-react';
 import useRentalStore from '../store/rentalStore';
+import { useNavigate } from 'react-router-dom';
 
 export default function Rental() {
+  const navigate = useNavigate();
+
   // Use the rental store
   const { 
     searchTerm, setSearchTerm,
@@ -323,13 +326,7 @@ export default function Rental() {
                                     ? 'bg-green-600 text-white hover:bg-green-700' 
                                     : 'bg-gray-300 text-gray-600 cursor-not-allowed'}`}
                                   disabled={!tool.available}
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    if (tool.available) {
-                                      // Add rental logic here
-                                      alert(`Renting ${tool.name}`);
-                                    }
-                                  }}
+                                   onClick={(e) => { navigate(`/rental/${tool.id}`)}}
                                 >
                                   {tool.available ? 'Rent Now' : 'Not Available'}
                                 </button>
@@ -388,13 +385,7 @@ export default function Rental() {
                                       ? 'bg-green-600 text-white hover:bg-green-700' 
                                       : 'bg-gray-300 text-gray-600 cursor-not-allowed'}`}
                                     disabled={!tool.available}
-                                    onClick={(e) => {
-                                      e.stopPropagation();
-                                      if (tool.available) {
-                                        // Add rental logic here
-                                        alert(`Renting ${tool.name}`);
-                                      }
-                                    }}
+                                     onClick={(e) => { navigate(`/rental/${tool.id}`)}}
                                   >
                                     {tool.available ? 'Rent Now' : 'Not Available'}
                                   </button>

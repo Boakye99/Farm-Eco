@@ -88,7 +88,7 @@ const Navbar = () => {
       const { data, error } = await supabase
         .from('user_profiles')
         .select('first_name')
-        .eq('uid', userId)
+        .eq('id', userId)
         .single();
         
       if (error) {

@@ -18,6 +18,10 @@ import Login from "./admin/Login";
 import Rental from './pages/Rental'
 import SignInPage from "./pages/UserLogin";
 import SignUpForm from "./pages/SignupForm";
+import RentalConfirmationPage from "./pages/RentalConfirmationPage";
+import RentalsAdmin from "./admin/Rentals";
+import AddRental from "./admin/AddRentals";
+import AdminSettings from "./admin/Settings";
 
 function App() {
   return (
@@ -27,6 +31,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
           <Route path="rentals" element={<Rental />} />
+           <Route path="rental/:toolId" element={<RentalConfirmationPage />} />
           <Route path="register" element={<SignUpForm />} />
           <Route path="login" element={<SignInPage />} />
           <Route path="products/:id" element={<ProductDetails />} />
@@ -39,8 +44,11 @@ function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="products" element={<ProductsList />} />
+          <Route path="rentals" element={<RentalsAdmin />} />
+           <Route path="add-rental" element={<AddRental />} />
           <Route path="add-product" element={<AddProduct />} />
           <Route path="orders" element={<Orders />} />
+           <Route path="settings" element={<AdminSettings />} />
           <Route path="users" element={<Users />} />
           <Route path="login" element={<Login />} />
         </Route>

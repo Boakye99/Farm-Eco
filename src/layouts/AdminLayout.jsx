@@ -179,23 +179,6 @@ const AdminLayout = () => {
                 <ShoppingCart size={20} className="flex-shrink-0" />
                 {isSidebarOpen && <span className="ml-3">Orders</span>}
               </Link>
-              
-              <Link 
-                to="/admin/users" 
-                className={`flex items-center px-4 py-3 text-sm rounded-lg hover:bg-gray-800 transition-colors ${isActive('/admin/users')}`}
-              >
-                <Users size={20} className="flex-shrink-0" />
-                {isSidebarOpen && <span className="ml-3">Customers</span>}
-              </Link>
-              
-              <Link 
-                to="/admin/reports" 
-                className={`flex items-center px-4 py-3 text-sm rounded-lg hover:bg-gray-800 transition-colors ${isActive('/admin/reports')}`}
-              >
-                <FileText size={20} className="flex-shrink-0" />
-                {isSidebarOpen && <span className="ml-3">Reports</span>}
-              </Link>
-              
               <Link 
                 to="/admin/settings" 
                 className={`flex items-center px-4 py-3 text-sm rounded-lg hover:bg-gray-800 transition-colors ${isActive('/admin/settings')}`}

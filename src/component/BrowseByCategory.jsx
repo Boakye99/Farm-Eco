@@ -155,14 +155,14 @@ const BrowseByCategory = () => {
                   {/* Action buttons */}
                   <div className="flex justify-between gap-2">
                     <Link
-                      to={`/products?category=${category.name}&type=buy`}
+                      to={`/rentals?category=${category.name}&type=buy`}
                       className="flex items-center justify-center gap-2 text-sm font-medium bg-[#1CA9C9] text-white px-4 py-2.5 rounded-lg hover:bg-[#178BA8] transition-colors duration-300 flex-1"
                     >
                       <FaShoppingBag className="text-white/90" />
                       <span>Buy</span>
                     </Link>
                     <Link
-                      to={`/products?category=${category.name}&type=rent`}
+                      to={`/rentals?category=${category.name}&type=rent`}
                       className="flex items-center justify-center gap-2 text-sm font-medium border border-[#1CA9C9] text-[#1CA9C9] px-4 py-2.5 rounded-lg hover:bg-[#1CA9C9] hover:text-white transition-colors duration-300 flex-1"
                     >
                       <FaRegCalendarAlt className="text-[#1CA9C9] group-hover:text-white" />
@@ -179,7 +179,7 @@ const BrowseByCategory = () => {
                     className="absolute top-0 right-0 m-4 z-10 bg-white rounded-full p-2.5 shadow-lg"
                   >
                     <Link
-                      to={`/products?category=${category.name}`}
+                      to={`/rentals?category=${category.name}`}
                       className="flex items-center justify-center text-[#1CA9C9] hover:text-[#178BA8] transition-colors"
                     >
                       <FaChevronRight className="w-4 h-4" />
@@ -199,7 +199,7 @@ const BrowseByCategory = () => {
           className="text-center mt-16"
         >
           <Link
-            to="/products"
+            to="/rentals"
             className="inline-flex items-center gap-2 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-6 py-3 rounded-lg transition-colors shadow-sm"
           >
             <span>View All Products</span>
